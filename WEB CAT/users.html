@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    /* Unvisited link */
+    a:link {
+      color: brown; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1300px; /* Adjust this value as needed */
+      padding: 8px;
+    }
+    button{
+      background-color:blue;
+      border: none;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+       </li><br><br><li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href=".courses/.html">courses</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./departments.html">departments</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./faculty.html">faculty</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./events.html">events</a>
+  </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./student.html">student</a>
+    </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./users.html">users</a>
+  </li>
+  </li>
+   
+  </li>
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+</header>
+
+<section>
+  <h1><u>events Form</u></h1>
+  <form method="post" action="order.php">
+    <label for="event_name">event_name:</label>
+        <input type="text" id="event_name" name="event_name"><br><br>
+         <label for="date and time">date and time:</label>
+        <input type="number" id="date and time" name="date and time" required><br><br>
+        <label for="location">location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+        <label for="organisers">organisers:</label>
+        <input type="text" id="organisers" name="organisers" required><br><br>
+        <label for="participation">participation:</label>
+        <input type="text" id="participation" name="participation" required><br><br>
+        
+        <input type="submit" name="add" value="Insert"><br><br>
+  </form>
+</section>
+<center>
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @Diane UWAMARIYA</h2></b>
+  </center>
+</footer>
+</center>
+<button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+</body>
+</html>
